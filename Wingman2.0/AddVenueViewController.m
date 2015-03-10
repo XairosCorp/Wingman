@@ -42,7 +42,7 @@
     [locationManager requestWhenInUseAuthorization];
     [locationManager startUpdatingLocation];
  */
-    myLocation = [[CLLocation alloc] initWithLatitude:32.999243 longitude:-110.954000];
+//    myLocation = [[CLLocation alloc] initWithLatitude:32.999243 longitude:-110.954000];
     
     
     // Do any additional setup after loading the view.
@@ -77,7 +77,8 @@
      NSLog(@"%f %f", newLocation.coordinate.latitude, newLocation.coordinate.longitude);
 
     
-//    myLocation = newLocation;
+    myLocation = newLocation;
+    [locationManager stopUpdatingLocation];
 
     //    [self addLocationMarker];
 }
