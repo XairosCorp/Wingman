@@ -55,6 +55,10 @@
   
 }
 
+- (IBAction)handleTryAgain:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     ApplyFIlters *filterView = segue.destinationViewController;

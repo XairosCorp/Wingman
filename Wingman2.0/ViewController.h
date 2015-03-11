@@ -13,6 +13,7 @@
 
 
 @property (strong, nonatomic) IBOutlet UIButton *signInButton;
+@property (strong, nonatomic) IBOutlet UIButton *signUpButton;
 
 @property (strong, nonatomic) IBOutlet UIButton *learnMoreButton;
 

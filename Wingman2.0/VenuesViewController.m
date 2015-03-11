@@ -47,6 +47,9 @@
     
     [self loadVenues];
     
+    // UI Customizations
+    _addVenueButton.layer.cornerRadius = 20;
+    
     // Do any additional setup after loading the view.
 }
 
@@ -61,19 +64,22 @@
 
 - (IBAction)handleVenue1:(id)sender {
     if (self.venue1NameLabel.text.length != 0){
-        [self performSegueWithIdentifier:@"venue1Segue" sender:self];
+        _currentVenueNumber = 1;
+        [self performSegueWithIdentifier:@"venueSegue" sender:self];
     }
 }
 
 - (IBAction)handleVenue2:(id)sender {
     if (self.venue2NameLabel.text.length != 0){
-        [self performSegueWithIdentifier:@"venue2Segue" sender:self];
+        _currentVenueNumber = 2;
+        [self performSegueWithIdentifier:@"venueSegue" sender:self];
     }
 }
 
 - (IBAction)handleVenue3:(id)sender {
     if (self.venue3NameLabel.text.length != 0){
-        [self performSegueWithIdentifier:@"venue3Segue" sender:self];
+        _currentVenueNumber = 3;
+        [self performSegueWithIdentifier:@"venueSegue" sender:self];
     }
 }
 
@@ -145,7 +151,19 @@
         AddVenueViewController *nextView = segue.destinationViewController;
         [nextView setUser:user];
     }
-    else if ([segue.identifier isEqualToString:@"venue1Segue"]){
+    else if ([segue.identifier isEqualToString:@"venueSegue"]){
+        
+        PeopleInVenue *nextView = segue.destinationViewController;
+        
+        if (_currentVenueNumber == 1) {
+            [nextView passUser:user aVenue:venue1];
+        } else if (_currentVenueNumber == 2) {
+            [nextView passUser:user aVenue:venue2];
+        } else if (_currentVenueNumber == 3) {
+            [nextView passUser:user aVenue:venue3];
+        }
+    }
+    /*else if ([segue.identifier isEqualToString:@"venue1Segue"]){
         PeopleInVenue *nextView = segue.destinationViewController;
         [nextView passUser:user aVenue:venue1];
     }
@@ -156,7 +174,7 @@
     else if ([segue.identifier isEqualToString:@"venue3Segue"]){
         PeopleInVenue *nextView = segue.destinationViewController;
         [nextView passUser:user aVenue:venue3];
-    }
+    }*/
     /* TODO: Delete this
     else if ([segue.identifier isEqualToString:@"backToMenuSegue"]){
         MenuViewController *nextView = segue.destinationViewController;

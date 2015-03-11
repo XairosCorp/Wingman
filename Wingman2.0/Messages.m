@@ -68,7 +68,8 @@
     [self.view bringSubviewToFront:self.backButton];
     [self.view bringSubviewToFront:self.sendButton];
     
-    
+    // UI Initializations
+    _sendButton.layer.cornerRadius = 20;
     // Do any additional setup after loading the view.
 }
 

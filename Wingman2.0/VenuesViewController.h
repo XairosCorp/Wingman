@@ -42,6 +42,8 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *venue3Button;
 
+@property int currentVenueNumber;
+
 - (IBAction)handleAddVenue:(id)sender;
 
 - (IBAction)handleVenue1:(id)sender;

@@ -124,6 +124,9 @@
 		ED5559691AAF53DD006B3F90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9530091A981BFE0090600D /* Main.storyboard */; };
 		ED55596A1AAF53DD006B3F90 /* Main_35.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5559661AAE887C006B3F90 /* Main_35.storyboard */; };
 		ED5559701AAF6160006B3F90 /* back arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = ED55596F1AAF6160006B3F90 /* back arrow.png */; };
+		ED5559741AB0D099006B3F90 /* black-and-white-filter-button.png in Resources */ = {isa = PBXBuildFile; fileRef = ED5559711AB0D099006B3F90 /* black-and-white-filter-button.png */; };
+		ED5559751AB0D099006B3F90 /* mars-filter-button.png in Resources */ = {isa = PBXBuildFile; fileRef = ED5559721AB0D099006B3F90 /* mars-filter-button.png */; };
+		ED5559761AB0D099006B3F90 /* normal-filter-button.png in Resources */ = {isa = PBXBuildFile; fileRef = ED5559731AB0D099006B3F90 /* normal-filter-button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -278,6 +281,9 @@
 		ED55596C1AAF5570006B3F90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		ED55596E1AAF5574006B3F90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main_35.strings; sourceTree = "<group>"; };
 		ED55596F1AAF6160006B3F90 /* back arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back arrow.png"; sourceTree = "<group>"; };
+		ED5559711AB0D099006B3F90 /* black-and-white-filter-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black-and-white-filter-button.png"; sourceTree = "<group>"; };
+		ED5559721AB0D099006B3F90 /* mars-filter-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mars-filter-button.png"; sourceTree = "<group>"; };
+		ED5559731AB0D099006B3F90 /* normal-filter-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "normal-filter-button.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -395,6 +401,9 @@
 		2F068E4A1A9EF0270041CD74 /* Filters */ = {
 			isa = PBXGroup;
 			children = (
+				ED5559711AB0D099006B3F90 /* black-and-white-filter-button.png */,
+				ED5559721AB0D099006B3F90 /* mars-filter-button.png */,
+				ED5559731AB0D099006B3F90 /* normal-filter-button.png */,
 				2F068E4B1A9EF0270041CD74 /* add caption button.jpg */,
 				2F068E4C1A9EF0270041CD74 /* black and white filter button.jpg */,
 				2F068E4D1A9EF0270041CD74 /* contrast button.jpg */,
@@ -750,12 +759,14 @@
 				2F068EB71A9EF0270041CD74 /* Looking good button.jpg in Resources */,
 				2F068EBC1A9EF0270041CD74 /* menu button.jpg in Resources */,
 				2F068EA11A9EF0270041CD74 /* go_arrow_button.jpg in Resources */,
+				ED5559741AB0D099006B3F90 /* black-and-white-filter-button.png in Resources */,
 				2F068E8F1A9EF0270041CD74 /* switch camera.jpg in Resources */,
 				2F068E881A9EF0270041CD74 /* oh snap button.jpg in Resources */,
 				2F068EA31A9EF0270041CD74 /* learn more button.jpg in Resources */,
 				2F068EBA1A9EF0270041CD74 /* done button.jpg in Resources */,
 				2F068E891A9EF0270041CD74 /* swag button.jpg in Resources */,
 				2F068E9C1A9EF0270041CD74 /* mars filter button.jpg in Resources */,
+				ED5559761AB0D099006B3F90 /* normal-filter-button.png in Resources */,
 				2F068EB41A9EF0270041CD74 /* matches button.jpg in Resources */,
 				ED5559701AAF6160006B3F90 /* back arrow.png in Resources */,
 				2F068EB81A9EF0270041CD74 /* picture blank.jpg in Resources */,
@@ -764,6 +775,7 @@
 				2F068EBD1A9EF0270041CD74 /* off switch.jpg in Resources */,
 				2F068EA51A9EF0270041CD74 /* sign in button.jpg in Resources */,
 				2F068ECB1A9EF2150041CD74 /* signup_button.jpg in Resources */,
+				ED5559751AB0D099006B3F90 /* mars-filter-button.png in Resources */,
 				2F068EBB1A9EF0270041CD74 /* Edit Profile blannk.jpg in Resources */,
 				2F068E8D1A9EF0270041CD74 /* flash on button.jpg in Resources */,
 				2F068EC31A9EF0270041CD74 /* sign up blank.jpg in Resources */,

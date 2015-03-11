@@ -54,8 +54,9 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"tryAgain"]){
-        TakePicture *takePicView = segue.destinationViewController;
-        [takePicView setUser:user];
+        //TODO: Delete
+       /* TakePicture *takePicView = segue.destinationViewController;
+        [takePicView setUser:user];*/
     }
     else if ([segue.identifier isEqualToString:@"confirmFilter"]){
         MenuViewController *menuView = segue.destinationViewController;
@@ -94,7 +95,9 @@
 
 
 - (IBAction)handleTryAgain:(id)sender {
-    [self performSegueWithIdentifier:@"tryAgain" sender:self];
+    [self.presentingViewController.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    TakePicture *takePicView = (TakePicture *)self.presentingViewController.presentingViewController;
+    [takePicView setUser:user];
 }
 
 - (IBAction)handleConfirm:(id)sender {

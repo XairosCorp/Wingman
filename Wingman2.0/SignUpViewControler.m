@@ -85,6 +85,10 @@
     }
 }
 
+- (IBAction)cancelSignUp:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.

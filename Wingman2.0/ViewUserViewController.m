@@ -50,21 +50,25 @@
             NSLog(@"Error");
         }
     }];
-    [self performSegueWithIdentifier:@"goBackToVenueSegue" sender:self];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    PeopleInVenue *newView = (PeopleInVenue *)self.presentingViewController;
+    [newView passUser:user aVenue:venue];
 }
 
 - (IBAction)handleNo:(id)sender {
-    [self performSegueWithIdentifier:@"goBackToVenueSegue" sender:self];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    PeopleInVenue *newView = (PeopleInVenue *)self.presentingViewController;
+    [newView passUser:user aVenue:venue];
 }
 
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"goBackToVenueSegue"]){
+    /*if ([segue.identifier isEqualToString:@"goBackToVenueSegue"]){
         PeopleInVenue *newView = segue.destinationViewController;
         [newView passUser:user aVenue:venue];
-    }
+    }*/
 }
 
 

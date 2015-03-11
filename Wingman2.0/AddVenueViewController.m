@@ -212,7 +212,9 @@
     [venue saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error){
             NSLog(@"Saved");
-            [self performSegueWithIdentifier:@"backToVenueListSegue" sender:self];
+            
+            // Dismiss the view
+            [self handleOhSnap:self];
         }
         else {
             NSLog(@"Error");
@@ -243,7 +245,9 @@
 }
 
 - (IBAction)handleOhSnap:(id)sender {
-    [self performSegueWithIdentifier:@"backToVenueListSegue" sender:self];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    VenuesViewController *newView = (VenuesViewController *)self.presentingViewController;
+    [newView setUser:user];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
@@ -365,10 +369,10 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"backToVenueListSegue"]){
+    /*if ([segue.identifier isEqualToString:@"backToVenueListSegue"]){
         VenuesViewController *newView = segue.destinationViewController;
         [newView setUser:user];
-    }
+    }*/
 }
 
 

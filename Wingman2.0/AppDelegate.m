@@ -53,6 +53,21 @@
         [self.window makeKeyAndVisible];
     }
     
+    // UI Customizations
+    
+    // Bar Button Fonts throughout app
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowOffset = CGSizeMake(0.0, 1.0);
+    shadow.shadowColor = [UIColor whiteColor];
+    
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil]
+     setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor blackColor],
+       NSShadowAttributeName:shadow,
+       NSFontAttributeName:[UIFont fontWithName:@"STHeitiSC-Light" size:14.0]
+       }
+     forState:UIControlStateNormal];
+    
     return YES;
 }
 

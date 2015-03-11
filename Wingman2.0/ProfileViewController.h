@@ -39,4 +39,5 @@
 
 - (IBAction)handleBackClicked:(id)sender;
 
+- (void)enableMessagesNavItem:(BOOL)option;
 @end

@@ -16,8 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view bringSubviewToFront:self.signInButton];
-    [self.view bringSubviewToFront:self.learnMoreButton];
+    //[self.view bringSubviewToFront:self.signInButton];
+    //[self.view bringSubviewToFront:self.learnMoreButton];
+    
+    // UI Initializations
+    _signInButton.layer.cornerRadius = 25;
+    _signUpButton.layer.cornerRadius = 25;
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

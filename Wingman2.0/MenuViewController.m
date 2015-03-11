@@ -75,7 +75,9 @@
         [newView setUser:user];
     }
     else if ([segue.identifier isEqualToString:@"connectionsSegue"]){
-        MatchesView *newView = segue.destinationViewController;
+        UINavigationController *navController = [segue destinationViewController];
+        
+        MatchesView *newView = (MatchesView *)([navController viewControllers][0]);
         [newView setUser:user];
     }
     else if ([segue.identifier isEqualToString:@"menuToProfileSegue"]){

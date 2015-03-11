@@ -90,7 +90,16 @@
 }
 
 
-
+- (void)enableMessagesNavItem:(BOOL)option {
+    if(option == YES) {
+        UIBarButtonItem *messagesNavButton = [[UIBarButtonItem alloc]
+                                       initWithTitle:@"Messages"
+                                       style:UIBarButtonItemStyleBordered
+                                       target:self
+                                       action:@selector(handleMessagesClicked:)];
+        self.navigationItem.rightBarButtonItem = messagesNavButton;
+    }
+}
 
 #pragma mark - Navigation
 

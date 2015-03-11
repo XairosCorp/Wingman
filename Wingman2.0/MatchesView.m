@@ -42,16 +42,45 @@
     
     confirmedMatchesArray = [[NSArray alloc] initWithArray:matchesArray];
     
+    // Set Nav Customizations
+    self.navigationItem.title = @"matches";
     
+    // Left BBI
+    UIBarButtonItem *closeButton = [[UIBarButtonItem alloc]
+                                       initWithTitle:@"Close"
+                                       style:UIBarButtonItemStyleBordered
+                                       target:self
+                                       action:@selector(handleGoBack:)];
+    self.navigationItem.leftBarButtonItem = closeButton;
+    
+    // Right BBI
+    UIBarButtonItem *testButton = [[UIBarButtonItem alloc]
+                                    initWithTitle:@"Test Profile"
+                                    style:UIBarButtonItemStyleBordered
+                                    target:self
+                                    action:@selector(test:)];
+    self.navigationItem.rightBarButtonItem = testButton;
+    
+    // Nav Color
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    
+    // Title Font
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:
+      [UIFont fontWithName:@"STHeitiSC-Light" size:21],
+      NSFontAttributeName, nil]];
 }
 
+-(void)test:(id)sender {
+    [self performSegueWithIdentifier:@"goToProfile" sender:self];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)handleGoBack:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+   [self dismissViewControllerAnimated:YES completion:nil];
     MenuViewController *newView = (MenuViewController *)self.presentingViewController;
     [newView setUser:user];
 }
@@ -155,6 +184,9 @@
     if ([segue.identifier isEqualToString:@"goToProfile"]){
         ProfileViewController *newView = segue.destinationViewController;
         [newView setUser:user andMatch:matchSelection];
+        
+        // Set nav items
+        [newView enableMessagesNavItem:YES];
     }
     /* TODO: Delete this -> Handled by dismissModal
     else if ([segue.identifier isEqualToString:@"backToMenuFromMatchesSegue"]){
@@ -162,6 +194,4 @@
         [newView setUser:user];
     }*/
 }
-
-
 @end

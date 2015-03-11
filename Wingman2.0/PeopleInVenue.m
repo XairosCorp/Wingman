@@ -81,6 +81,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // UI Customizations
+    
+    //Move tableView down
+    [self.tableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
+    
+    
     /*
      PFQuery *query = [PFQuery queryWithClassName:@"User"];
      [query orderByAscending:@"createdAt"];
@@ -118,7 +125,10 @@
 }
 
 - (IBAction)handleBack:(id)sender {
-    [self performSegueWithIdentifier:@"backOutSegue" sender:self];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    VenuesViewController *newView = (VenuesViewController *)self.presentingViewController;
+    [newView setUser:user];
 }
 
 -(void)passUser:(PFObject *)the_user aVenue:(PFObject *)the_venue{
@@ -144,10 +154,11 @@
         PFObject *ob = [ar objectAtIndex:indexPath.row];
         [newView passUser:user other_user:ob aVenue:venue userImage:im];
     }
+    /* TODO: Delete -> Code moved to handleBack method
     else if ([segue.identifier isEqualToString:@"backOutSegue"]){
         VenuesViewController *newView = segue.destinationViewController;
         [newView setUser:user];
-    }
+    }*/
 }
 
 
