@@ -78,7 +78,9 @@
 }
 
 - (IBAction)handleMenuButton:(id)sender {
-    [self performSegueWithIdentifier:@"backToMenuSegue" sender:self];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    MenuViewController *nextView = (MenuViewController *)self.presentingViewController;
+    [nextView setUser:user];
 }
 
 - (void)setUser:(PFObject *)object{
@@ -155,10 +157,11 @@
         PeopleInVenue *nextView = segue.destinationViewController;
         [nextView passUser:user aVenue:venue3];
     }
+    /* TODO: Delete this
     else if ([segue.identifier isEqualToString:@"backToMenuSegue"]){
         MenuViewController *nextView = segue.destinationViewController;
         [nextView setUser:user];
-    }
+    }*/
     
 }
 

@@ -25,6 +25,9 @@
     [self.passwordField setSecureTextEntry:YES];
     [self.passwordField2 setSecureTextEntry:YES];
     
+    // UI Setup
+    _signUpButton.layer.cornerRadius = 20;
+    
     // Do any additional setup after loading the view.
 }
 

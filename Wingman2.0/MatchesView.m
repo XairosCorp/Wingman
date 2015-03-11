@@ -51,7 +51,9 @@
 }
 
 - (IBAction)handleGoBack:(id)sender {
-    [self performSegueWithIdentifier:@"backToMenuFromMatchesSegue" sender:self];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    MenuViewController *newView = (MenuViewController *)self.presentingViewController;
+    [newView setUser:user];
 }
 
 - (void)setUser:(PFObject *)object{
@@ -154,10 +156,11 @@
         ProfileViewController *newView = segue.destinationViewController;
         [newView setUser:user andMatch:matchSelection];
     }
+    /* TODO: Delete this -> Handled by dismissModal
     else if ([segue.identifier isEqualToString:@"backToMenuFromMatchesSegue"]){
         MenuViewController *newView = segue.destinationViewController;
         [newView setUser:user];
-    }
+    }*/
 }
 
 

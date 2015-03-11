@@ -942,7 +942,7 @@
                             </connections>
                         </button>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="peopleinVenuesCell" id="rJq-cb-k6n">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rJq-cb-k6n">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rJq-cb-k6n" id="PKy-I8-yoF">
                                     <autoresizingMask key="autoresizingMask"/>

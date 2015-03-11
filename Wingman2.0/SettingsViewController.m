@@ -89,7 +89,7 @@
         [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (!error){
                 NSLog(@"Success");
-                [self performSegueWithIdentifier:@"doneBackToMenuSegue" sender:self];
+                [self dismissViewControllerAnimated:YES completion:nil];
             }
         }];
     }
@@ -97,7 +97,7 @@
 }
 
 - (IBAction)handleMenu:(id)sender {
-    [self performSegueWithIdentifier:@"doneBackToMenuSegue" sender:self];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 

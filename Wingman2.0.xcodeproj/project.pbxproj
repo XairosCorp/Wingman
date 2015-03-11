@@ -27,7 +27,7 @@
 		2F068E931A9EF0270041CD74 /* contrast blank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F068E461A9EF0270041CD74 /* contrast blank.jpg */; };
 		2F068E941A9EF0270041CD74 /* knob.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F068E471A9EF0270041CD74 /* knob.jpg */; };
 		2F068E951A9EF0270041CD74 /* never mind.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F068E481A9EF0270041CD74 /* never mind.jpg */; };
-		2F068E961A9EF0270041CD74 /* swag button.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F068E491A9EF0270041CD74 /* swag button.jpg */; };
+		2F068E961A9EF0270041CD74 /* swag_button.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F068E491A9EF0270041CD74 /* swag_button.jpg */; };
 		2F068E971A9EF0270041CD74 /* add caption button.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F068E4B1A9EF0270041CD74 /* add caption button.jpg */; };
 		2F068E981A9EF0270041CD74 /* black and white filter button.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F068E4C1A9EF0270041CD74 /* black and white filter button.jpg */; };
 		2F068E991A9EF0270041CD74 /* contrast button.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F068E4D1A9EF0270041CD74 /* contrast button.jpg */; };
@@ -86,7 +86,6 @@
 		2F9530021A981BFD0090600D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9530011A981BFD0090600D /* main.m */; };
 		2F9530051A981BFD0090600D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9530041A981BFD0090600D /* AppDelegate.m */; };
 		2F9530081A981BFD0090600D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9530071A981BFD0090600D /* ViewController.m */; };
-		2F95300B1A981BFE0090600D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9530091A981BFE0090600D /* Main.storyboard */; };
 		2F95300D1A981BFE0090600D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F95300C1A981BFE0090600D /* Images.xcassets */; };
 		2F9530101A981BFE0090600D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F95300E1A981BFE0090600D /* LaunchScreen.xib */; };
 		2F95301C1A981BFE0090600D /* Wingman2_0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F95301B1A981BFE0090600D /* Wingman2_0Tests.m */; };
@@ -122,6 +121,9 @@
 		A3374E6F1AA2C5010031B5F4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3374E6E1AA2C5010031B5F4 /* Parse.framework */; };
 		A3374E701AA2C5010031B5F4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3374E6E1AA2C5010031B5F4 /* Parse.framework */; };
 		A3374E751AA2CA1D0031B5F4 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3374E741AA2CA1C0031B5F4 /* ParseUI.framework */; };
+		ED5559691AAF53DD006B3F90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9530091A981BFE0090600D /* Main.storyboard */; };
+		ED55596A1AAF53DD006B3F90 /* Main_35.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5559661AAE887C006B3F90 /* Main_35.storyboard */; };
+		ED5559701AAF6160006B3F90 /* back arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = ED55596F1AAF6160006B3F90 /* back arrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,7 +160,7 @@
 		2F068E461A9EF0270041CD74 /* contrast blank.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "contrast blank.jpg"; sourceTree = "<group>"; };
 		2F068E471A9EF0270041CD74 /* knob.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = knob.jpg; sourceTree = "<group>"; };
 		2F068E481A9EF0270041CD74 /* never mind.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "never mind.jpg"; sourceTree = "<group>"; };
-		2F068E491A9EF0270041CD74 /* swag button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "swag button.jpg"; sourceTree = "<group>"; };
+		2F068E491A9EF0270041CD74 /* swag_button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swag_button.jpg; sourceTree = "<group>"; };
 		2F068E4B1A9EF0270041CD74 /* add caption button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "add caption button.jpg"; sourceTree = "<group>"; };
 		2F068E4C1A9EF0270041CD74 /* black and white filter button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "black and white filter button.jpg"; sourceTree = "<group>"; };
 		2F068E4D1A9EF0270041CD74 /* contrast button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "contrast button.jpg"; sourceTree = "<group>"; };
@@ -272,6 +274,10 @@
 		A3374E6E1AA2C5010031B5F4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		A3374E741AA2CA1C0031B5F4 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../parse-library-1.6.3/ParseUI.framework"; sourceTree = "<group>"; };
 		A3374E761AA2CBB80031B5F4 /* see more blank.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "see more blank.jpg"; path = "Wingman2.0/Graphics/See more/see more blank.jpg"; sourceTree = "<group>"; };
+		ED5559671AAE887C006B3F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_35.storyboard; sourceTree = "<group>"; };
+		ED55596C1AAF5570006B3F90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		ED55596E1AAF5574006B3F90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main_35.strings; sourceTree = "<group>"; };
+		ED55596F1AAF6160006B3F90 /* back arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back arrow.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,7 +386,7 @@
 				2F068E461A9EF0270041CD74 /* contrast blank.jpg */,
 				2F068E471A9EF0270041CD74 /* knob.jpg */,
 				2F068E481A9EF0270041CD74 /* never mind.jpg */,
-				2F068E491A9EF0270041CD74 /* swag button.jpg */,
+				2F068E491A9EF0270041CD74 /* swag_button.jpg */,
 			);
 			name = Contrast;
 			path = Graphics/Contrast;
@@ -496,6 +502,7 @@
 		2F068E7D1A9EF0270041CD74 /* Sign up */ = {
 			isa = PBXGroup;
 			children = (
+				ED55596F1AAF6160006B3F90 /* back arrow.png */,
 				2F068EC81A9EF1770041CD74 /* Sign up1.jpg */,
 				2F068ECF1A9EF5820041CD74 /* sign_in_blank.jpg */,
 				2F068ECA1A9EF2150041CD74 /* signup_button.jpg */,
@@ -549,11 +556,14 @@
 				2F9530061A981BFD0090600D /* ViewController.h */,
 				2F9530071A981BFD0090600D /* ViewController.m */,
 				2F9530091A981BFE0090600D /* Main.storyboard */,
+				ED5559661AAE887C006B3F90 /* Main_35.storyboard */,
 				2F95300C1A981BFE0090600D /* Images.xcassets */,
 				2F95300E1A981BFE0090600D /* LaunchScreen.xib */,
 				2F952FFF1A981BFD0090600D /* Supporting Files */,
 				2F5758041A983EBC00058DA2 /* SignUpViewControler.h */,
 				2F5758051A983EBC00058DA2 /* SignUpViewControler.m */,
+				2F068ECC1A9EF2E40041CD74 /* SignInViewController.h */,
+				2F068ECD1A9EF2E40041CD74 /* SignInViewController.m */,
 				2FF671D21A990AB800DB6935 /* ConfirmPicture.h */,
 				2FF671D31A990AB800DB6935 /* ConfirmPicture.m */,
 				2FF671D51A990C8200DB6935 /* TakePicture.h */,
@@ -572,8 +582,6 @@
 				2FF6720A1A991C9D00DB6935 /* AddVenueViewController.m */,
 				2FF672211A9928D900DB6935 /* ViewUserViewController.h */,
 				2FF672221A9928D900DB6935 /* ViewUserViewController.m */,
-				2F068ECC1A9EF2E40041CD74 /* SignInViewController.h */,
-				2F068ECD1A9EF2E40041CD74 /* SignInViewController.m */,
 				2F060E341AA13CB200F51FA2 /* PeopleInVenue.h */,
 				2F060E351AA13CB200F51FA2 /* PeopleInVenue.m */,
 				2F060E3A1AA1659400F51FA2 /* MatchesTableController.h */,
@@ -721,6 +729,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5559691AAF53DD006B3F90 /* Main.storyboard in Resources */,
+				ED55596A1AAF53DD006B3F90 /* Main_35.storyboard in Resources */,
 				2F068EC01A9EF0270041CD74 /* see more blank.jpg in Resources */,
 				2F068E941A9EF0270041CD74 /* knob.jpg in Resources */,
 				2F068EA41A9EF0270041CD74 /* learn_more_button.jpg in Resources */,
@@ -728,7 +738,6 @@
 				2F068EBF1A9EF0270041CD74 /* no button.jpg in Resources */,
 				2F068E9B1A9EF0270041CD74 /* filters blank.jpg in Resources */,
 				2F068EA81A9EF0270041CD74 /* logout.jpg in Resources */,
-				2F95300B1A981BFE0090600D /* Main.storyboard in Resources */,
 				2F068EBE1A9EF0270041CD74 /* on switch.jpg in Resources */,
 				2F9530101A981BFE0090600D /* LaunchScreen.xib in Resources */,
 				2F068EAE1A9EF0270041CD74 /* settings.jpg in Resources */,
@@ -748,9 +757,10 @@
 				2F068E891A9EF0270041CD74 /* swag button.jpg in Resources */,
 				2F068E9C1A9EF0270041CD74 /* mars filter button.jpg in Resources */,
 				2F068EB41A9EF0270041CD74 /* matches button.jpg in Resources */,
+				ED5559701AAF6160006B3F90 /* back arrow.png in Resources */,
 				2F068EB81A9EF0270041CD74 /* picture blank.jpg in Resources */,
 				2F068E951A9EF0270041CD74 /* never mind.jpg in Resources */,
-				2F068E961A9EF0270041CD74 /* swag button.jpg in Resources */,
+				2F068E961A9EF0270041CD74 /* swag_button.jpg in Resources */,
 				2F068EBD1A9EF0270041CD74 /* off switch.jpg in Resources */,
 				2F068EA51A9EF0270041CD74 /* sign in button.jpg in Resources */,
 				2F068ECB1A9EF2150041CD74 /* signup_button.jpg in Resources */,
@@ -855,6 +865,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2F95300A1A981BFE0090600D /* Base */,
+				ED55596C1AAF5570006B3F90 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -865,6 +876,15 @@
 				2F95300F1A981BFE0090600D /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		ED5559661AAE887C006B3F90 /* Main_35.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED5559671AAE887C006B3F90 /* Base */,
+				ED55596E1AAF5574006B3F90 /* en */,
+			);
+			name = Main_35.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -959,8 +979,6 @@
 					"$(PROJECT_DIR)/parse-library-1.6.3",
 					"$(PROJECT_DIR)/Wingman2.0",
 					"$(PROJECT_DIR)/Wingman2.0/Parse.framework",
-					/Users/Zane/Desktop/Parse.framework,
-					"/Users/Kait/Downloads/parse-library-1.6.3",
 				);
 				INFOPLIST_FILE = Wingman2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -981,8 +999,6 @@
 					"$(PROJECT_DIR)/parse-library-1.6.3",
 					"$(PROJECT_DIR)/Wingman2.0",
 					"$(PROJECT_DIR)/Wingman2.0/Parse.framework",
-					/Users/Zane/Desktop/Parse.framework,
-					"/Users/Kait/Downloads/parse-library-1.6.3",
 				);
 				INFOPLIST_FILE = Wingman2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

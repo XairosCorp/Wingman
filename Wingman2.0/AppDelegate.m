@@ -21,6 +21,37 @@
     
     [Parse setApplicationId:@"AgHP0qx1yMwnkVnCPXEy3QbhUEG5Z9hATKbc0HXk"  clientKey:@"pWDpp0nzs6GgFaNpkRzNapOqP6GnJt3gvoBHRGpI"];
     
+    // Change storyboard depending on screen size/device
+    CGSize iOSDeviceScreenSize = [[UIScreen mainScreen] bounds].size;
+    
+    // 3.5-inch Screen (iPhone 3G/3GS/4/4S) Devices
+    if (iOSDeviceScreenSize.height == 480)
+    {
+        // Instantiate a new storyboard object using the storyboard file named Storyboard_iPhone35
+        UIStoryboard *iPhone35Storyboard = [UIStoryboard storyboardWithName:@"Main_35" bundle:nil];
+        
+        // Instantiate the initial view controller object from the storyboard
+        UIViewController *initialViewController = [iPhone35Storyboard instantiateInitialViewController];
+        
+        // Instantiate a UIWindow object and initialize it with the screen size of the iOS device
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        
+        // Set the initial view controller to be the root view controller of the window object
+        self.window.rootViewController  = initialViewController;
+        
+        // Set the window object to be the key window and show it
+        [self.window makeKeyAndVisible];
+        
+    } else
+    {
+        // 4-inch Screen (iPhone 5/5S) Devices
+        UIStoryboard *iPhone4Storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        UIViewController *initialViewController = [iPhone4Storyboard instantiateInitialViewController];
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        self.window.rootViewController  = initialViewController;
+        [self.window makeKeyAndVisible];
+    }
     
     return YES;
 }

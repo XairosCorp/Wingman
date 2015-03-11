@@ -12,7 +12,7 @@
 #import "PeopleInVenue.h"
 #import "MenuViewController.h"
 
-@interface VenuesViewController : UIViewController{
+@interface VenuesViewController : UIViewController <CLLocationManagerDelegate>{
     PFObject *user;
     NSString *userID;
     PFObject *venue1;

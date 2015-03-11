@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface TakePicture : UIViewController{
+@interface TakePicture : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>{
     PFObject *user;
     UIImage *thePicture;
 }

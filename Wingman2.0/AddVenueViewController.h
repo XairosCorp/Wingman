@@ -12,7 +12,7 @@
 #import <Parse/Parse.h>
 #import "VenuesViewController.h"
 
-@interface AddVenueViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>{
+@interface AddVenueViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>{
     float radius;
     MKCircle *testCircle;
     PFObject *user;

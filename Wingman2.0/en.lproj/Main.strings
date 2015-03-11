@@ -1,0 +1,60 @@
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "3bt-Fx-nIP"; */
+"3bt-Fx-nIP.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "5d3-bi-KpO"; */
+"5d3-bi-KpO.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Messages"; ObjectID = "8RV-FV-LrL"; */
+"8RV-FV-LrL.normalTitle" = "Messages";
+
+/* Class = "IBUITextField"; placeholder = "Name"; ObjectID = "Adm-Hc-DAg"; */
+"Adm-Hc-DAg.placeholder" = "Name";
+
+/* Class = "IBUITextField"; placeholder = "Email"; ObjectID = "B2x-Of-wwv"; */
+"B2x-Of-wwv.placeholder" = "Email";
+
+/* Class = "IBUITextField"; placeholder = "password"; ObjectID = "Cpi-L0-JPe"; */
+"Cpi-L0-JPe.placeholder" = "password";
+
+/* Class = "IBUIButton"; normalTitle = "Edit"; ObjectID = "DnS-1o-uGW"; */
+"DnS-1o-uGW.normalTitle" = "Edit";
+
+/* Class = "IBUITextField"; placeholder = "email"; ObjectID = "EcJ-1v-Vfe"; */
+"EcJ-1v-Vfe.placeholder" = "email";
+
+/* Class = "IBUIButton"; normalTitle = "Send"; ObjectID = "GCL-mk-yGi"; */
+"GCL-mk-yGi.normalTitle" = "Send";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "M00-So-7LZ"; */
+"M00-So-7LZ.normalTitle" = "Button";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Rd2-sE-v6T"; */
+"Rd2-sE-v6T.text" = "Label";
+
+/* Class = "IBUITextField"; placeholder = "Confirm Password"; ObjectID = "ZWJ-CK-vwY"; */
+"ZWJ-CK-vwY.placeholder" = "Confirm Password";
+
+/* Class = "IBUILabel"; text = "50"; ObjectID = "c3h-eb-SIk"; */
+"c3h-eb-SIk.text" = "50";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "cdI-IO-T3u"; */
+"cdI-IO-T3u.normalTitle" = "Back";
+
+/* Class = "IBUILabel"; text = "Messages"; ObjectID = "jTy-3n-fgZ"; */
+"jTy-3n-fgZ.text" = "Messages";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "mBf-t0-gDt"; */
+"mBf-t0-gDt.normalTitle" = "Back";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "rAf-u4-gqI"; */
+"rAf-u4-gqI.text" = "Label";
+
+/* Class = "IBUITextField"; placeholder = "Password"; ObjectID = "v8Q-JN-nsG"; */
+"v8Q-JN-nsG.placeholder" = "Password";
+
+/* Class = "IBUILabel"; text = "ft"; ObjectID = "wc3-jR-CmR"; */
+"wc3-jR-CmR.text" = "ft";
+
+/* Class = "IBUILabel"; text = "USER_NAME"; ObjectID = "ysO-SI-v05"; */
+"ysO-SI-v05.text" = "USER_NAME";

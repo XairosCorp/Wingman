@@ -20,6 +20,10 @@
     [self.view bringSubviewToFront:self.passwordField];
     [self.view bringSubviewToFront:self.signInButton];
     [self.passwordField setSecureTextEntry:YES];
+    
+    // UI Setup
+    _signInButton.layer.cornerRadius = 20;
+    
     // Do any additional setup after loading the view.
 }
 
@@ -54,6 +58,9 @@
     }
 }
 
+- (IBAction)cancelSignIn:(UIBarButtonItem *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
  #pragma mark - Navigation

@@ -73,11 +73,19 @@
 }
 
 - (IBAction)handleBackClicked:(id)sender {
+    // If this profile does not belong to the user -> Accessed from "MatchesView"
     if (![[user objectForKey:@"email"] isEqualToString:[match objectForKey:@"email"]]){
         [self performSegueWithIdentifier:@"backToMatchesSegue" sender:self];
     }
     else {
-        [self performSegueWithIdentifier:@"profileToMenuSegue" sender:self];
+        
+        // If this profile is the users -> Accessed from "My Profile"
+        [self dismissViewControllerAnimated:YES completion:nil];
+        
+        // Set User in menu (the presenting view), just in case
+        MenuViewController *newView = (MenuViewController *)self.presentingViewController;
+        [newView setUser:user];
+
     }
 }
 
@@ -94,10 +102,6 @@
     }
     else if ([segue.identifier isEqualToString:@"backToMatchesSegue"]){
         MatchesView *newView = segue.destinationViewController;
-        [newView setUser:user];
-    }
-    else if ([segue.identifier isEqualToString:@"profileToMenuSegue"]){
-        MenuViewController *newView = segue.destinationViewController;
         [newView setUser:user];
     }
     
