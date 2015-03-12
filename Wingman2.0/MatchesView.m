@@ -53,14 +53,6 @@
                                        action:@selector(handleGoBack:)];
     self.navigationItem.leftBarButtonItem = closeButton;
     
-    // Right BBI
-    UIBarButtonItem *testButton = [[UIBarButtonItem alloc]
-                                    initWithTitle:@"Test Profile"
-                                    style:UIBarButtonItemStyleBordered
-                                    target:self
-                                    action:@selector(test:)];
-    self.navigationItem.rightBarButtonItem = testButton;
-    
     // Nav Color
     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
     
@@ -71,9 +63,6 @@
       NSFontAttributeName, nil]];
 }
 
--(void)test:(id)sender {
-    [self performSegueWithIdentifier:@"goToProfile" sender:self];
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

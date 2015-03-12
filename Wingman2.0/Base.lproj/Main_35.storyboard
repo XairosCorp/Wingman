@@ -55,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="248" y="-2312"/>
+            <point key="canvasLocation" x="248" y="-1948"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="2SH-53-zvI">
@@ -135,7 +135,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="a20-vN-c6Z"/>
+                                    <action selector="handleLogout:" destination="W8M-fS-F7k" eventType="touchUpInside" id="0Tr-8c-yCQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -151,14 +151,14 @@
                         <outlet property="venuesButton" destination="vUC-jl-snD" id="B2d-m7-7Aa"/>
                         <segue destination="Ggs-OT-dma" kind="presentation" identifier="goToEditProfile" id="BKy-Os-Oof"/>
                         <segue destination="Qj5-nk-F2n" kind="presentation" identifier="photoShoot" id="WTE-qY-936"/>
-                        <segue destination="Vn4-LF-FQM" kind="presentation" identifier="goToVenues" id="Xmy-b4-Fm4"/>
+                        <segue destination="Njb-Cd-3GW" kind="presentation" identifier="goToVenues" id="Xmy-b4-Fm4"/>
                         <segue destination="G9E-7n-ueo" kind="presentation" identifier="connectionsSegue" id="QoX-CY-rDl"/>
                         <segue destination="3zj-Xg-v5J" kind="presentation" identifier="menuToProfileSegue" id="OWu-hr-5UT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7D-51-v0z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="483" y="-564"/>
+            <point key="canvasLocation" x="483" y="-604"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="L8w-tF-KNQ">
@@ -174,7 +174,7 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F2Y-Dv-Qb0">
                                 <rect key="frame" x="78" y="162" width="226" height="52"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <navigationBar alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" backIndicatorImage="back arrow.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dV8-vG-DIE">
@@ -209,7 +209,7 @@
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lu7-0s-AR9">
                                 <rect key="frame" x="78" y="265" width="226" height="52"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -275,7 +275,7 @@
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vvo-Ku-55N">
                                 <rect key="frame" x="78" y="213" width="226" height="52"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7QP-vq-wly">
@@ -302,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsD-m0-anL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1094" y="249"/>
+            <point key="canvasLocation" x="906" y="148"/>
         </scene>
         <!--Take Picture-->
         <scene sceneID="gIG-xZ-TkY">
@@ -316,11 +316,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera blank.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zOh-iC-hFW">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a picture of just yourself!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og8-hb-jG7">
+                                <rect key="frame" x="16" y="28" width="296" height="48"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ou5-DH-Abi">
+                                <rect key="frame" x="0.0" y="97" width="320" height="320"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOW-v7-h1D">
-                                <rect key="frame" x="122" y="406" width="76" height="74"/>
+                                <rect key="frame" x="128" y="416" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.0" green="0.76257573339999996" blue="0.4320837246" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="camera button.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -329,7 +337,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
@@ -339,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="asb-NQ-Ilo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-683" y="30"/>
+            <point key="canvasLocation" x="-411" y="10"/>
         </scene>
         <!--Confirm Picture-->
         <scene sceneID="xRZ-VV-d2s">
@@ -353,12 +361,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="picture blank.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Ai-DVc">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                            </imageView>
+                            <view alpha="0.84999999999999987" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yRU-Vm-hzK">
+                                <rect key="frame" x="0.0" y="415" width="320" height="65"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIX-kJ-wjd">
-                                <rect key="frame" x="26" y="430" width="74" height="30"/>
-                                <state key="normal">
+                                <rect key="frame" x="0.0" y="415" width="160" height="65"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <state key="normal" title="try again">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -366,19 +377,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIx-BP-7bV">
-                                <rect key="frame" x="195" y="430" width="109" height="30"/>
-                                <state key="normal">
+                                <rect key="frame" x="160" y="415" width="160" height="65"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
+                                <state key="normal" title="looking good">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="handleLookingGood:" destination="ewr-80-9SQ" eventType="touchUpInside" id="22f-XA-hM4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999999999999969" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="set as picture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La1-6K-NQk">
+                                <rect key="frame" x="0.0" y="28" width="320" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBi-Yj-A5v">
-                                <rect key="frame" x="40" y="78" width="240" height="240"/>
+                                <rect key="frame" x="40" y="88" width="240" height="240"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
@@ -390,7 +409,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozt-W9-E2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-683" y="649"/>
+            <point key="canvasLocation" x="-411" y="629"/>
         </scene>
         <!--Venues View Controller-->
         <scene sceneID="8DS-ht-okf">
@@ -523,12 +542,12 @@
                         <outlet property="venue3ImageView" destination="gj6-ID-ljJ" id="ZOt-BQ-Ygj"/>
                         <outlet property="venue3NameLabel" destination="Rd2-sE-v6T" id="EI9-v7-KNA"/>
                         <segue destination="Wqc-Bb-XRH" kind="presentation" identifier="addVenueSegue" id="EeU-GE-Yah"/>
-                        <segue destination="glf-89-m2R" kind="presentation" identifier="venueSegue" id="bQ7-hy-4kS"/>
+                        <segue destination="glf-89-m2R" kind="show" identifier="venueSegue" id="bQ7-hy-4kS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OG6-ew-rjm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="484" y="249"/>
+            <point key="canvasLocation" x="483" y="818"/>
         </scene>
         <!--ApplyF Ilters-->
         <scene sceneID="01i-X5-enM">
@@ -608,12 +627,12 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="filters" id="rmY-vD-oMR">
-                                        <barButtonItem key="leftBarButtonItem" title="retake" id="Vbj-Tz-Qak">
+                                        <barButtonItem key="leftBarButtonItem" title="Retake" id="Vbj-Tz-Qak">
                                             <connections>
                                                 <action selector="handleTryAgain:" destination="QpV-fs-8DV" id="L8u-lK-hRU"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="finish" id="xpT-Gz-VSH">
+                                        <barButtonItem key="rightBarButtonItem" title="Finish" id="xpT-Gz-VSH">
                                             <connections>
                                                 <action selector="handleConfirm:" destination="QpV-fs-8DV" id="oCE-Gk-yXE"/>
                                             </connections>
@@ -638,7 +657,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uqr-Go-eIU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-683" y="1328"/>
+            <point key="canvasLocation" x="-411" y="1308"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="0p9-IR-k04">
@@ -663,7 +682,7 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="profile" id="pyB-kf-pXF">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cGc-Dv-8zH">
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="cGc-Dv-8zH">
                                             <connections>
                                                 <action selector="handleBackClicked:" destination="3zj-Xg-v5J" id="b4Y-oQ-nvF"/>
                                             </connections>
@@ -729,31 +748,31 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrQ-Za-meT" userLabel="Name Text">
                                 <rect key="frame" x="78" y="162" width="226" height="52"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae7-wW-s1I" userLabel="City Text">
                                 <rect key="frame" x="78" y="213" width="226" height="52"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xo9-O3-SRV" userLabel="Email Text">
                                 <rect key="frame" x="78" y="265" width="226" height="52"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHf-Q6-lYO" userLabel="Girls Text">
                                 <rect key="frame" x="182" y="368" width="122" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPU-K0-v1x" userLabel="Guys Text">
                                 <rect key="frame" x="182" y="419" width="122" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -800,22 +819,22 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zwj-n1-u6u" userLabel="Type Text View">
                                 <rect key="frame" x="16" y="341" width="288" height="83"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmf-wL-Xa1" userLabel="Text 1">
                                 <rect key="frame" x="16" y="69" width="288" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTo-W1-gc0" userLabel="Text 3">
                                 <rect key="frame" x="16" y="205" width="288" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqU-WH-e8K" userLabel="Text 4">
                                 <rect key="frame" x="16" y="273" width="288" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCL-mk-yGi">
@@ -852,7 +871,7 @@
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqh-7Y-mSu" userLabel="Text 2">
                                 <rect key="frame" x="16" y="137" width="288" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -877,22 +896,10 @@
         <scene sceneID="gP6-oo-880">
             <objects>
                 <tableViewController id="QWB-t4-e57" customClass="MatchesView" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="143" sectionHeaderHeight="22" sectionFooterHeight="22" id="6qI-SL-bLb">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="143" sectionHeaderHeight="22" sectionFooterHeight="22" id="6qI-SL-bLb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mBf-t0-gDt">
-                            <rect key="frame" x="0.0" y="165" width="320" height="64"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                            <state key="normal" title="Back">
-                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="handleGoBack:" destination="QWB-t4-e57" eventType="touchUpInside" id="Nte-6X-Zvf"/>
-                            </connections>
-                        </button>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellIdentifier" rowHeight="143" id="zjx-Dd-2cT">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -901,12 +908,12 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5d3-bi-KpO">
                                             <rect key="frame" x="150" y="46" width="162" height="54"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MyC-PK-RQO">
-                                            <rect key="frame" x="0.0" y="8" width="142" height="131"/>
+                                            <rect key="frame" x="8" y="11" width="120" height="120"/>
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
@@ -920,7 +927,6 @@
                     <navigationItem key="navigationItem" id="2NC-SC-qLp"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="backButton" destination="mBf-t0-gDt" id="rQz-GJ-kdk"/>
                         <segue destination="3zj-Xg-v5J" kind="show" identifier="goToProfile" id="dee-iU-EBm"/>
                     </connections>
                 </tableViewController>
@@ -967,12 +973,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USER_NAME" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysO-SI-v05">
-                                <rect key="frame" x="16" y="20" width="288" height="22"/>
-                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="24"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYQ-5f-Hk5">
                                 <rect key="frame" x="0.0" y="353" width="160" height="112"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="32"/>
@@ -1002,6 +1002,12 @@
                                     <action selector="handleYes:" destination="WCY-J4-U79" eventType="touchUpInside" id="TDF-OV-5nJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USER_NAME" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysO-SI-v05">
+                                <rect key="frame" x="16" y="28" width="288" height="22"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="24"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                     </view>
@@ -1015,7 +1021,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wTI-aB-vN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="278" y="1597"/>
+            <point key="canvasLocation" x="262" y="2134"/>
         </scene>
         <!--Add Venue View Controller-->
         <scene sceneID="EAz-ex-J2N">
@@ -1116,7 +1122,7 @@
                             </navigationBar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Venue Name Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RKE-q6-cwi">
                                 <rect key="frame" x="16" y="207" width="288" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -1135,28 +1141,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVD-YP-umv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="688" y="966"/>
+            <point key="canvasLocation" x="730" y="1500"/>
         </scene>
         <!--People In Venue-->
         <scene sceneID="7L3-dS-WMv">
             <objects>
                 <tableViewController id="glf-89-m2R" customClass="PeopleInVenue" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="R0i-Ou-z00">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="R0i-Ou-z00">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cdI-IO-T3u">
-                            <rect key="frame" x="0.0" y="66" width="320" height="53"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                            <state key="normal" title="Back">
-                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="handleBack:" destination="glf-89-m2R" eventType="touchUpInside" id="VRD-5B-sOS"/>
-                            </connections>
-                        </button>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rJq-cb-k6n">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -1172,13 +1166,12 @@
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="backButton" destination="cdI-IO-T3u" id="5Xn-9k-KFc"/>
                         <segue destination="WCY-J4-U79" kind="presentation" identifier="customSegue" id="WPB-4x-dvO"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vH8-9r-mVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="278" y="966"/>
+            <point key="canvasLocation" x="262" y="1500"/>
         </scene>
         <!--sign up-->
         <scene sceneID="B3h-ik-Ooc">
@@ -1301,7 +1294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OH1-fL-NTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19" y="-1659"/>
+            <point key="canvasLocation" x="19" y="-1295"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="qzH-es-A47">
@@ -1391,7 +1384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNd-gf-c78" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="483" y="-1659"/>
+            <point key="canvasLocation" x="483" y="-1295"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d5a-3u-mFV">
@@ -1436,23 +1429,39 @@
             </objects>
             <point key="canvasLocation" x="1778" y="-1034"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VpL-aq-drd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Njb-Cd-3GW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jkp-mM-TFi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vn4-LF-FQM" kind="relationship" relationship="rootViewController" id="CpF-Wi-UgA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8q-0Z-hAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="148"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back arrow.jpg" width="26" height="23"/>
         <image name="back arrow.png" width="26" height="23"/>
         <image name="black-and-white-filter-button.png" width="150" height="150"/>
-        <image name="camera blank.jpg" width="640" height="1136"/>
         <image name="camera button.jpg" width="108" height="108"/>
         <image name="intro blank.jpg" width="640" height="1136"/>
         <image name="mars-filter-button.png" width="150" height="150"/>
         <image name="menu blank.jpg" width="640" height="1136"/>
         <image name="normal-filter-button.png" width="150" height="150"/>
-        <image name="picture blank.jpg" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="som-G3-5qZ"/>
-        <segue reference="FDl-Dq-Ees"/>
-        <segue reference="dee-iU-EBm"/>
         <segue reference="38z-NY-AHT"/>
+        <segue reference="dee-iU-EBm"/>
+        <segue reference="Zaz-An-3ZJ"/>
+        <segue reference="FDl-Dq-Ees"/>
     </inferredMetricsTieBreakers>
 </document>

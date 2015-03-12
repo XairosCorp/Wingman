@@ -22,7 +22,7 @@
     [self.view bringSubviewToFront:self.userImageView];
     
     [self.userImageView setImage:picture];
-    [self.userNameLabel setText:[user objectForKey:@"name"]];
+    [self.userNameLabel setText:[viewedUser objectForKey:@"name"]];
     
     // Do any additional setup after loading the view.
 }
@@ -50,14 +50,16 @@
             NSLog(@"Error");
         }
     }];
-    [self dismissViewControllerAnimated:YES completion:nil];
-    PeopleInVenue *newView = (PeopleInVenue *)self.presentingViewController;
-    [newView passUser:user aVenue:venue];
+    
+    // Close menu
+    [self handleNo:self];
 }
 
 - (IBAction)handleNo:(id)sender {
+    UINavigationController *navController = (UINavigationController *)self.presentingViewController;
+    
     [self dismissViewControllerAnimated:YES completion:nil];
-    PeopleInVenue *newView = (PeopleInVenue *)self.presentingViewController;
+    PeopleInVenue *newView = (PeopleInVenue *)([navController viewControllers][1]);
     [newView passUser:user aVenue:venue];
 }
 

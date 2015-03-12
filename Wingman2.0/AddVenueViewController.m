@@ -245,8 +245,10 @@
 }
 
 - (IBAction)handleOhSnap:(id)sender {
+    UINavigationController *navController = (UINavigationController *)self.presentingViewController;
+    
     [self dismissViewControllerAnimated:YES completion:nil];
-    VenuesViewController *newView = (VenuesViewController *)self.presentingViewController;
+    VenuesViewController *newView = (VenuesViewController *)([navController viewControllers][0]);
     [newView setUser:user];
 }
 

@@ -1107,11 +1107,11 @@
         <image name="yes button.jpg" width="57" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="38z-NY-AHT"/>
-        <segue reference="OWu-hr-5UT"/>
         <segue reference="som-G3-5qZ"/>
         <segue reference="QMS-MB-aFN"/>
-        <segue reference="Xmy-b4-Fm4"/>
+        <segue reference="OWu-hr-5UT"/>
+        <segue reference="38z-NY-AHT"/>
+        <segue reference="LU9-xp-9vm"/>
         <segue reference="wS6-I3-Amd"/>
     </inferredMetricsTieBreakers>
 </document>

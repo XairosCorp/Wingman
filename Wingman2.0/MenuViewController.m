@@ -57,6 +57,8 @@
     [self performSegueWithIdentifier:@"menuToProfileSegue" sender:self];
 }
 
+- (IBAction)handleLogout:(id)sender {
+    [self.presentingViewController.presentingViewController dismissViewControllerAnimated:YES completion:nil];}
 
 #pragma mark - Navigation
 
@@ -71,7 +73,13 @@
         [takePicView setUser:user];
     }
     else if ([segue.identifier isEqualToString:@"goToVenues"]){
-        VenuesViewController *newView = segue.destinationViewController;
+        /*VenuesViewController *newView = segue.destinationViewController;
+        [newView setUser:user];*/
+        
+        // Changed for nav
+        UINavigationController *navController = [segue destinationViewController];
+        
+        VenuesViewController *newView = (VenuesViewController *)([navController viewControllers][0]);
         [newView setUser:user];
     }
     else if ([segue.identifier isEqualToString:@"connectionsSegue"]){

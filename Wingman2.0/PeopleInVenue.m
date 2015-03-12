@@ -82,11 +82,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // UI Customizations
-    
-    //Move tableView down
-    [self.tableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
-    
     
     /*
      PFQuery *query = [PFQuery queryWithClassName:@"User"];
@@ -122,6 +117,9 @@
             }];
         }
     }];
+    
+    // Set Nav Customizations
+    self.navigationItem.title = [@"people in " stringByAppendingString:[venue objectForKey:@"name"]];
 }
 
 - (IBAction)handleBack:(id)sender {

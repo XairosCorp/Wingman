@@ -50,6 +50,26 @@
     // UI Customizations
     _addVenueButton.layer.cornerRadius = 20;
     
+    // Set Nav Customizations
+    self.navigationItem.title = @"venues";
+    
+    // Left BBI
+    UIBarButtonItem *closeButton = [[UIBarButtonItem alloc]
+                                    initWithTitle:@"Close"
+                                    style:UIBarButtonItemStyleBordered
+                                    target:self
+                                    action:@selector(handleMenuButton:)];
+    self.navigationItem.leftBarButtonItem = closeButton;
+    
+    // Nav Color
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    
+    // Title Font
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:
+      [UIFont fontWithName:@"STHeitiSC-Light" size:21],
+      NSFontAttributeName, nil]];
+
     // Do any additional setup after loading the view.
 }
 
@@ -153,7 +173,7 @@
     }
     else if ([segue.identifier isEqualToString:@"venueSegue"]){
         
-        PeopleInVenue *nextView = segue.destinationViewController;
+        PeopleInVenue *nextView = (PeopleInVenue *)segue.destinationViewController;
         
         if (_currentVenueNumber == 1) {
             [nextView passUser:user aVenue:venue1];
