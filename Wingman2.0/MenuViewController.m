@@ -57,9 +57,6 @@
     [self performSegueWithIdentifier:@"menuToProfileSegue" sender:self];
 }
 
-- (IBAction)handleLogout:(id)sender {
-    [self.presentingViewController.presentingViewController dismissViewControllerAnimated:YES completion:nil];}
-
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation

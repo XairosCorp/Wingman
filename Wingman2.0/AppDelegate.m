@@ -25,7 +25,7 @@
     CGSize iOSDeviceScreenSize = [[UIScreen mainScreen] bounds].size;
     
     // 3.5-inch Screen (iPhone 3G/3GS/4/4S) Devices
-    if (iOSDeviceScreenSize.height == 480)
+    if (iOSDeviceScreenSize.height >= 480)
     {
         // Instantiate a new storyboard object using the storyboard file named Storyboard_iPhone35
         UIStoryboard *iPhone35Storyboard = [UIStoryboard storyboardWithName:@"Main_35" bundle:nil];
