@@ -71,24 +71,41 @@
 }
 
 - (IBAction)handleMars:(id)sender {
+    
+    // Fix Orientation since CIImage takes raw data
+    UIImageOrientation originalOrientation = picture.imageOrientation;
+    CGFloat originalScale = picture.scale;
+    
+    // Create Filter
     CIImage *rawImageData = [[CIImage alloc] initWithImage:picture];
     CIFilter *filter = [CIFilter filterWithName:@"CISepiaTone" keysAndValues:kCIInputImageKey, rawImageData, @"inputIntensity", [NSNumber numberWithFloat:0.7], nil];
     CIImage *filtered = [filter outputImage];
     CIContext *context = [CIContext contextWithOptions:nil];
     CGImageRef cgiimage = [context createCGImage:filtered fromRect:filtered.extent];
-    UIImage *done = [UIImage imageWithCGImage:cgiimage];
+    // Create new image based on filter and original picture orientatoin and scale;
+    UIImage *done = [UIImage imageWithCGImage:cgiimage scale:originalScale orientation:originalOrientation];
+
     [self.mainImageView setImage:done];
     filteredPicture = done;
 }
 
 - (IBAction)handleBW:(id)sender {
+    
+    // Fix Orientation since CIImage takes raw data
+    UIImageOrientation originalOrientation = picture.imageOrientation;
+    CGFloat originalScale = picture.scale;
+    
+    // Create Filter
     CIImage *rawImageData = [[CIImage alloc] initWithImage:picture];
     CIImage *filter = [CIFilter filterWithName:@"CIColorControls" keysAndValues:kCIInputImageKey, rawImageData, @"inputBrightness", [NSNumber numberWithFloat:0.0], @"inputContrast", [NSNumber numberWithFloat:1.1], @"inputSaturation", [NSNumber numberWithFloat:0.0], nil].outputImage;
     CIImage *output = [CIFilter filterWithName:@"CIExposureAdjust" keysAndValues:kCIInputImageKey, filter, @"inputEV", [NSNumber numberWithFloat:0.7], nil].outputImage;
     
     CIContext *context = [CIContext contextWithOptions:nil];
     CGImageRef cgiimage = [context createCGImage:output fromRect:output.extent];
-    UIImage *newImage = [UIImage imageWithCGImage:cgiimage];
+    
+    // Create new image based on filter and original picture orientatoin and scale;
+    UIImage *newImage = [UIImage imageWithCGImage:cgiimage scale:originalScale orientation:originalOrientation];
+    
     filteredPicture = newImage;
     [self.mainImageView setImage:newImage];
 }

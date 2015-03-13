@@ -90,7 +90,7 @@
             [newMessage setObject:[user objectForKey:@"email"] forKey:@"senderEmail"];
             [newMessage setObject:[match objectForKey:@"email"] forKey:@"receiverEmail"];
             [newMessage setObject:self.currentTextView.text forKey:@"text"];
-            int messageCount = numberOfMessages;
+            int messageCount = (int)numberOfMessages;
             messageCount = messageCount + 1;
             NSNumber *newTextNumber = [NSNumber numberWithInt:messageCount];
             [newMessage setObject:newTextNumber forKey:@"number"];

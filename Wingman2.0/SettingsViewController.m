@@ -23,7 +23,11 @@
     PFFile *picFile = [user objectForKey:@"picture"];
     [picFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
         if (!error){
-            [self.profilePictureView setImage:[UIImage imageWithData:data]];
+            UIImage *tmp = [UIImage imageWithData:data];
+            UIImage *fixed = [UIImage imageWithCGImage:tmp.CGImage
+                                                 scale:1.0f
+                                           orientation:UIImageOrientationLeftMirrored];
+            [self.profilePictureView setImage:fixed];
         }
     }];
     NSNumber *interestNum = [user objectForKey:@"interestedIn"];

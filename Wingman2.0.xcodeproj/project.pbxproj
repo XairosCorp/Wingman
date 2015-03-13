@@ -706,10 +706,11 @@
 				TargetAttributes = {
 					2F952FFB1A981BFD0090600D = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 6EUV397CG8;
+						DevelopmentTeam = KY69WXGH46;
 					};
 					2F9530141A981BFE0090600D = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = KY69WXGH46;
 						TestTargetID = 2F952FFB1A981BFD0090600D;
 					};
 				};

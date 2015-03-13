@@ -36,6 +36,7 @@
     [self.pictureView setImage:picture];
     NSLog(@"\n\n%@", [object objectForKey:@"name"]);
     NSLog(@"\n%@", userPicture);
+    NSLog(@"%f x %f", userPicture.size.height, userPicture.size.width);
 }
 
 - (IBAction)handleLookingGood:(id)sender {
